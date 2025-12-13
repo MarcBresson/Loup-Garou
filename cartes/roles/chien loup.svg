@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#8B4513" stroke-width="3" rx="10" ry="10" />
+
+  <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#555" text-anchor="middle">Chien-Loup</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle">Personnages</text>
+
+  <g transform="translate(100, 120)">
+    <path d="M50 10 Q 10 20, 10 50 Q 20 80, 50 90 Z" fill="#8B4513" />
+    <circle cx="35" cy="45" r="5" fill="#fff" />
+    <path d="M50 10 Q 90 20, 90 50 Q 80 80, 50 90 Z" fill="#333" />
+    <circle cx="65" cy="45" r="5" fill="#c00" />
+  </g>
+
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Choisir son camp.</tspan></tspan>
+    <tspan x="150" dy="24">À la première nuit, il choisit s'il</tspan>
+    <tspan x="150" dy="17">devient un Simple Villageois (chien)</tspan>
+    <tspan x="150" dy="17">ou un Loup-Garou pour le reste de</tspan>
+    <tspan x="150" dy="17">la partie.</tspan>
+  </text>
+<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Variable</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">-1</text></svg>

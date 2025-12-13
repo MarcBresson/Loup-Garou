@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#B8860B" stroke-width="3" rx="10" ry="10" />
+  
+  <text x="150" y="50" font-family="Georgia, serif" font-size="18" font-weight="bold" fill="#8B4513" text-anchor="middle" id="role">Chevalier à l'Épée Rouillée</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Personnages</text>
+
+  <g transform="translate(100, 110)">
+    <rect x="45" y="10" width="10" height="60" fill="#A9A9A9" />
+    <rect x="35" y="70" width="30" height="10" fill="#D2B48C" />
+    <line x1="50" y1="30" x2="55" y2="35" stroke="#8B4513" stroke-width="2" />
+    <path d="M50 70 L50 100" stroke="#8B4513" stroke-width="2" stroke-dasharray="2,2" />
+  </g>
+
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Vengeance post-mortem.</tspan></tspan>
+    <tspan x="150" dy="24">S'il est mangé par les loups, empoisonne</tspan>
+    <tspan x="150" dy="17">le premier loup à sa gauche qui a participé</tspan>
+    <tspan x="150" dy="17">au vote. Le loup empoisonné meurt au début</tspan>
+    <tspan x="150" dy="17">de la nuit suivante.</tspan>
+  </text>
+<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Village</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">+4</text></svg>

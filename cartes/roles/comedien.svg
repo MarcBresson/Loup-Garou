@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#FF4500" stroke-width="3" rx="10" ry="10" />
+  <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#FF4500" text-anchor="middle">Comédien</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle">Personnages</text>
+
+  <g transform="translate(100, 120)" fill="#fff" stroke="#FF4500" stroke-width="2">
+    <path d="M 10 20 C 5 5, 45 5, 40 20 L 45 55 C 45 70, 5 70, 5 55 Z" /> <circle cx="17" cy="30" r="3" /> <circle cx="33" cy="30" r="3" /> <path d="M 15 45 Q 25 55, 35 45" fill="none" stroke-linecap="round" /> <path d="M 50 20 C 45 5, 85 5, 80 20 L 85 55 C 85 70, 45 70, 45 55 Z" /> <circle cx="57" cy="30" r="3" /> <circle cx="73" cy="30" r="3" /> <path d="M 55 50 Q 65 40, 75 50" fill="none" stroke-linecap="round" /> <path d="M 40 10 L 50 10" stroke-width="1.5" stroke-dasharray="2 2" fill="none" />
+  </g>
+
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Changer de rôle chaque nuit.</tspan></tspan>
+    <tspan x="150" dy="24">Le meneur choisi 3 cartes non-loup</tspan>
+    <tspan x="150" dy="17">et les places face visible au centre.</tspan>
+    <tspan x="150" dy="17">Le comédien peut utiliser le pouvoir</tspan>
+    <tspan x="150" dy="17">d'une carte jusqu'à la nuit suivante.</tspan>
+    <tspan x="150" dy="17">Une fois une carte utilisée, le meneur</tspan>
+    <tspan x="150" dy="17">l'enlève du centre.</tspan>
+  </text>
+<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Village</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">+1</text></svg>

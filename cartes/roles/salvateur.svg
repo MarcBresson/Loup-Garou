@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#2a3b4a" stroke-width="3" rx="10" ry="10" />
+  
+  <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#003366" text-anchor="middle" id="role">Salvateur</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Nouvelle Lune</text>
+
+  <g transform="translate(100, 110)">
+    <path d="M10 10 L90 10 L90 40 C90 80 50 100 50 100 C50 100 10 80 10 40 Z" fill="#4682B4" stroke="#000" stroke-width="2" />
+    <path d="M50 20 L50 90 M20 40 L80 40" stroke="#fff" stroke-width="5" />
+  </g>
+
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Protéger le village.</tspan></tspan>
+    <tspan x="150" dy="24">Chaque nuit, il désigne un joueur</tspan>
+    <tspan x="150" dy="17">qu'il protège de l'attaque des</tspan>
+    <tspan x="150" dy="17">Loups-Garous. Il ne peut pas protéger</tspan>
+    <tspan x="150" dy="17">la même personne deux tours de suite.</tspan>
+  </text>
+<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Village</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">+5</text></svg>

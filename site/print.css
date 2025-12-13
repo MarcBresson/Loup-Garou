@@ -1,0 +1,190 @@
+/* Éditeur d'impression: styles spécifiques */
+
+.print-grid {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 960px) {
+  .print-grid {
+    grid-template-columns: 1.2fr 0.8fr;
+  }
+}
+
+.table-wrap {
+  overflow: auto;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.table th,
+.table td {
+  padding: 10px 10px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+.table th {
+  text-align: left;
+  color: var(--muted);
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.03);
+  position: sticky;
+  top: 0;
+}
+
+.table tr:hover td {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.preview-thumb {
+  width: 56px;
+  height: 78px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.05);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.preview-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.print-preview {
+  display: grid;
+  gap: 14px;
+}
+
+/* Pages imprimables: on raisonne en mm */
+.sheet {
+  /* A4 portrait */
+  width: 210mm;
+  height: 297mm;
+  margin: 0 auto;
+  background: white;
+  color: black;
+  border: 1px dashed rgba(0, 0, 0, 0.25);
+  /* Padding pilotable (marges) : par défaut 8mm, surchargé par JS si besoin. */
+  display: flex;
+  flex-direction: column;
+}
+
+.sheet-title {
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
+    Arial;
+  font-size: 12px;
+  margin: 0 0 6mm;
+  opacity: 0.7;
+}
+
+.cards-grid {
+  display: grid;
+  justify-content: start;
+  align-content: start;
+  /* Prend tout l'espace restant de la feuille (après le titre),
+     sinon align-content n'a pas de "hauteur dispo" et le centrage vertical
+     devient incohérent sur les pages suivantes. */
+  flex: 1;
+  min-height: 0;
+}
+
+.card-cell {
+  position: relative;
+  background: white;
+}
+
+.card-cell img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/*
+  Traits de coupe: outline + gap.
+  L'outline est dessiné *autour* de la cellule, et avec un `outline-offset` positif,
+  il se décale dans le gap (donc ne recouvre pas l'image).
+  Côté JS, on s'assure que le gap est assez grand pour accueillir l'outline.
+*/
+
+.card-cell.cut-lines {
+  outline: var(--cutLinePx, 1px) dashed rgba(0, 0, 0, 0.65);
+  /* gap = largeur de trait (côté JS) => offset 0 suffit */
+  outline-offset: 0;
+}
+
+@media print {
+  @page {
+    /* Firefox + “sans marge”: on peut réellement viser une page A4 sans marges CSS */
+    size: A4 portrait;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: white;
+    color: black;
+    /*
+      Sur Firefox, centrer via flex sur body lors de l'impression peut produire
+      des différences page 1 vs pages suivantes. On centre donc la feuille
+      via ses propres marges (plus stable).
+    */
+    display: block;
+  }
+
+  /*
+    Wrapper stable pour le centrage en impression.
+    On centre chaque feuille A4 dans la page (0 marges CSS) avec une grille.
+    C'est plus fiable que body:flex pour Firefox (différences page 1 / suivantes).
+  */
+  #print-preview {
+    display: grid;
+    justify-items: center;
+  }
+
+  /* Si le joueur demande une marge gauche=0 (align gauche), on ancre à gauche */
+  body.print-anchor-left #print-preview {
+    justify-items: start;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .container {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .card {
+    box-shadow: none;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .sheet {
+    border: none;
+    /* force un page break après chaque feuille */
+    break-after: page;
+    page-break-after: always;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .sheet-title {
+    display: none;
+  }
+}

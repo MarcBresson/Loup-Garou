@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#d4af37" stroke-width="3" rx="10" ry="10" />
+
+  <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#b8860b" text-anchor="middle" id="role">L'Ange</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Personnages</text>
+
+  <g transform="translate(100, 120)">
+    <ellipse cx="50" cy="10" rx="30" ry="5" fill="none" stroke="#FFD700" stroke-width="3" />
+    <path d="M50 40 Q80 20 90 50 Q80 80 50 60 Q20 80 10 50 Q20 20 50 40" fill="#fff" stroke="#aaa" stroke-width="2" />
+  </g>
+
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Se faire éliminer.</tspan></tspan>
+    <tspan x="150" dy="24">L'Ange gagne la partie seul s'il</tspan>
+    <tspan x="150" dy="17">réussit à se faire éliminer lors du</tspan>
+    <tspan x="150" dy="17">premier vote du village ou par les</tspan>
+    <tspan x="150" dy="17">Loups-Garous la première nuit.</tspan>
+  </text>
+<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Neutre (solo)</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">-2</text></svg>

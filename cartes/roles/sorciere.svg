@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#C71585" stroke-width="3" rx="10" ry="10" />
+  <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#C71585" text-anchor="middle" id="role">Sorcière</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Loups-Garous de Thiercelieux</text>
+
+  <g transform="translate(90, 110)">
+    <path d="M20 30 L20 10 L40 10 L40 30 L50 80 L10 80 Z" fill="#32CD32" />
+    <path d="M80 30 L80 10 L100 10 L100 30 L110 80 L70 80 Z" fill="#B22222" />
+  </g>
+
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Utiliser ses potions.</tspan></tspan>
+    <tspan x="150" dy="24">Elle possède deux potions à usage</tspan>
+    <tspan x="150" dy="17">unique : une pour ramener une</tspan>
+    <tspan x="150" dy="17">victime à la vie, et une autre pour</tspan>
+    <tspan x="150" dy="17">tuer un joueur la nuit.</tspan>
+  </text>
+<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Village</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">+7</text></svg>

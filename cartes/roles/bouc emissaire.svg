@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#333333" stroke-width="3" rx="10" ry="10" />
+  <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#333333" text-anchor="middle" id="role">Bouc Émissaire</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Nouvelle Lune</text>
+
+  <g transform="translate(100, 110)">
+    <path d="M30 40 L20 20 L40 30 L60 30 L80 20 L70 40 L50 80 Z" fill="#D2691E" stroke="#000" />
+    <circle cx="40" cy="45" r="2" fill="#000" />
+    <circle cx="60" cy="45" r="2" fill="#000" />
+  </g>
+
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Être la victime de réserve.</tspan></tspan>
+    <tspan x="150" dy="24">Si le village ne parvient pas à se</tspan>
+    <tspan x="150" dy="17">mettre d'accord sur qui voter, le</tspan>
+    <tspan x="150" dy="17">Bouc Émissaire est éliminé d'office.</tspan>
+    <tspan x="150" dy="17">Il peut alors désigner un joueur qui</tspan>
+    <tspan x="150" dy="17">ne pourra pas voter au tour suivant.</tspan>
+  </text>
+<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Village</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">+1</text></svg>

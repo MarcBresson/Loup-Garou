@@ -1,0 +1,30 @@
+<svg width="300" height="423" viewBox="0 0 300 423" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15"/>
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#9400D3" stroke-width="3" rx="10" ry="10"/>
+  <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#9400D3" text-anchor="middle" id="role">Marionnettiste</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Loup-Garou en Ligne</text>
+
+  <g transform="translate(110, 110)">
+    <rect x="25" y="10" width="50" height="10" fill="#333"/>
+    <rect x="45" y="0" width="10" height="30" fill="#333"/>
+    <line x1="35" y1="30" x2="20" y2="80" stroke="#9400D3" stroke-width="2"/>
+    <line x1="45" y1="30" x2="45" y2="90" stroke="#9400D3" stroke-width="2"/>
+    <line x1="65" y1="30" x2="80" y2="80" stroke="#9400D3" stroke-width="2"/>
+  </g>
+
+  <text
+     x="150"
+     y="270"
+     font-family="Georgia, serif"
+     font-size="13"
+     fill="#333"
+     text-anchor="middle"
+     id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Manipuler.</tspan></tspan>
+    <tspan x="150" dy="24">Chaque nuit, il peut remplacer</tspan>
+    <tspan x="150" dy="17">un loup choisi au hasard. Il se</tspan>
+    <tspan x="150" dy="17">fera passer pour un loup et devra</tspan>
+    <tspan x="150" dy="17">voter. La nuit suivante, le loup</tspan>
+    <tspan x="150" dy="17">remplacé reprend son rôle.</tspan>
+  </text>
+</svg>

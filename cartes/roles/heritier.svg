@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#DAA520" stroke-width="3" rx="10" ry="10" />
+  <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#DAA520" text-anchor="middle" id="role">Héritier</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Wolfy</text>
+
+  <g transform="translate(90, 120)">
+    <path d="M20 20 L25 35 L35 25 L45 35 L55 25 L65 35 L75 25 L85 35 L90 20 L90 40 L20 40 Z" fill="#DAA520" stroke="#B8860B" stroke-width="2" />
+    <circle cx="30" cy="25" r="3" fill="#FFD700" />
+    <circle cx="55" cy="25" r="3" fill="#FFD700" />
+    <circle cx="80" cy="25" r="3" fill="#FFD700" />
+    
+    <line x1="55" y1="50" x2="55" y2="75" stroke="#B8860B" stroke-width="3" stroke-linecap="round" />
+    <polygon points="55,78 50,68 60,68" fill="#B8860B" />
+    
+    <rect x="30" y="80" width="50" height="35" fill="#F5DEB3" stroke="#8B7355" stroke-width="2" rx="2" />
+    <line x1="35" y1="88" x2="75" y2="88" stroke="#8B7355" stroke-width="1" />
+    <line x1="35" y1="95" x2="75" y2="95" stroke="#8B7355" stroke-width="1" />
+    <line x1="35" y1="102" x2="75" y2="102" stroke="#8B7355" stroke-width="1" />
+    <line x1="35" y1="109" x2="65" y2="109" stroke="#8B7355" stroke-width="1" />
+  </g>
+
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Hériter d'un rôle.</tspan></tspan>
+    <tspan x="150" dy="24">La première nuit, il désigne un</tspan>
+    <tspan x="150" dy="17">joueur qui lui lèguera son rôle à</tspan>
+    <tspan x="150" dy="17">sa mort.</tspan>
+  </text>
+<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Village</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">+1</text></svg>

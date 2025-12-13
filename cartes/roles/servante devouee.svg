@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#483D8B" stroke-width="3" rx="10" ry="10" />
+  <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#4169E1" text-anchor="middle" id="role">Servante Dévouée</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Personnages</text>
+
+  <g transform="translate(150, 165)">
+    
+    
+    <path d="M -28 -35               Q 0 -55 28 -35              L 28 40              Q 0 55 -28 40              Z" fill="none" stroke="#4169E1" stroke-width="3" />
+
+    
+    <path d="M -28 -35               Q -15 -55 -5 -55" fill="none" stroke="#4169E1" stroke-width="3" stroke-linecap="round" />
+    <path d="M 28 -35               Q 15 -55 5 -55" fill="none" stroke="#4169E1" stroke-width="3" stroke-linecap="round" />
+
+    
+    <path d="M 0 5              C -10 -10 -20 5 -5 18              L 0 23              L 5 18              C 20 5 10 -10 0 5 Z" fill="#4169E1" />
+  </g>
+
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Sauver un rôle.</tspan></tspan>
+    <tspan x="150" dy="24">A la fin de la nuit, elle peut échanger</tspan>
+    <tspan x="150" dy="17">son rôle avec une des victime de la nuit.</tspan>
+  </text>
+<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Village</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">+2</text></svg>

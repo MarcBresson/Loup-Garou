@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ns1="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:ns2="http://www.inkscape.org/namespaces/inkscape" width="300" height="423" viewBox="0 0 300 423" version="1.1" id="svg8" ns1:docname="ankou.svg" ns2:version="1.4.2 (ebf0e940, 2025-05-08)">
+  <defs id="defs8" />
+  <ns1:namedview id="namedview8" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" ns2:showpageshadow="2" ns2:pageopacity="0.0" ns2:pagecheckerboard="0" ns2:deskcolor="#d1d1d1" ns2:zoom="1.039904" ns2:cx="-1.9232545" ns2:cy="142.32084" ns2:window-width="1472" ns2:window-height="891" ns2:window-x="0" ns2:window-y="37" ns2:window-maximized="1" ns2:current-layer="svg8" />
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" id="rect1" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#000000" stroke-width="3" rx="10" ry="10" id="rect2" style="stroke:#010113;stroke-opacity:1" />
+  <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#000" text-anchor="middle" id="role" style="fill:#020315;fill-opacity:1">Ankou</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Loup-Garou en Ligne</text>
+  <g transform="translate(110, 110)" id="g3">
+    <line x1="40" y1="90" x2="80" y2="20" stroke="#5d4037" stroke-width="4" id="line3" />
+    <path d="M80 20 Q40 10 20 40 L30 45 Q50 25 80 20" fill="#aaa" stroke="#333" id="path3" />
+  </g>
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText"><tspan x="150" dy="0" font-weight="bold" id="tspan4">But : <tspan font-weight="normal" id="tspan3">Aider le village (post-mortem).</tspan></tspan><tspan x="150" dy="24" id="tspan5">L'Ankou participe aux votes des</tspan><tspan x="150" dy="17" id="tspan6">villageois pendant deux tours après</tspan><tspan x="150" dy="17" id="tspan7">sa mort. Son vote n'est pas connu du</tspan><tspan x="150" dy="17" id="tspan8">reste du village.</tspan></text>
+<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Village</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">+2</text></svg>

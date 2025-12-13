@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#8B4513" stroke-width="3" rx="10" ry="10" />
+  <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#8B4513" text-anchor="middle" id="role">Ancien</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Nouvelle Lune</text>
+
+  <g transform="translate(100, 110)">
+    <rect x="45" y="40" width="10" height="70" fill="#DAA520" />
+    <path d="M40 40 L60 40 L65 30 L50 20 L35 30 Z" fill="#FFD700" stroke="#8B4513" stroke-width="2" />
+    <circle cx="50" cy="50" r="45" fill="none" stroke="#DAA520" stroke-width="3" />
+  </g>
+
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Résister.</tspan></tspan>
+    <tspan x="150" dy="24">S'il est attaqué par les loups, il</tspan>
+    <tspan x="150" dy="17">survit à la première attaque.</tspan>
+    <tspan x="150" dy="17">Cependant, s'il est éliminé par le</tspan>
+    <tspan x="150" dy="17">village, tous les joueurs spéciaux</tspan>
+    <tspan x="150" dy="17">perdent leurs pouvoirs pour la nuit</tspan>
+    <tspan x="150" dy="17">suivante.</tspan>
+  </text>
+<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Village</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">+3</text></svg>

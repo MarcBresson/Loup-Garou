@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#DAA520" stroke-width="3" rx="10" ry="10" />
+  <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#A0522D" text-anchor="middle" id="role">Villageois-Villageois</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Personnages</text>
+
+  <!-- Pictogramme : villageois au rôle public (aplats colorés) -->
+  <g transform="translate(100, 70)" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Silhouette villageois -->
+    <circle cx="50" cy="88" r="13" fill="#eee57dff" stroke-width="3" />
+    <!-- corps rempli (vert village) -->
+    <path d="M26 140
+             C26 118 36 104 50 104
+             C64 104 74 118 74 140
+             L74 152
+             L26 152 Z"
+          fill="#2E8B57" stroke="none" />
+
+    <!-- Badge 'public' (œil) -->
+    <circle cx="76" cy="56" r="18" fill="#FFD666" />
+    <path d="M64 56
+             C67 49 71 45 76 45
+             C81 45 85 49 88 56
+             C85 63 81 67 76 67
+             C71 67 67 63 64 56 Z"
+          fill="#ffffff" stroke="#A0522D" stroke-width="2" />
+    <circle cx="76" cy="56" r="5" fill="#A0522D" stroke="none" />
+  </g>
+
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Gagner avec le village.</tspan></tspan>
+    <tspan x="150" dy="24">C'est un rôle de villageois sans</tspan>
+    <tspan x="150" dy="17">pouvoir, mais tout le monde sait</tspan>
+    <tspan x="150" dy="17">qui il est.</tspan>
+  </text>
+<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Village</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">0</text></svg>

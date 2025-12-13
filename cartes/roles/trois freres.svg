@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#4682B4" stroke-width="3" rx="10" ry="10" />
+  <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#1E90FF" text-anchor="middle" id="role">Trois Frères</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Personnages</text>
+
+  <g transform="translate(100, 110)">
+    <rect x="20" y="50" width="20" height="40" fill="#4682B4" />
+    <circle cx="30" cy="50" r="10" fill="#F0E68C" />
+    <rect x="40" y="30" width="20" height="60" fill="#1E90FF" />
+    <circle cx="50" cy="30" r="10" fill="#F0E68C" />
+    <rect x="60" y="40" width="20" height="50" fill="#4682B4" />
+    <circle cx="70" cy="40" r="10" fill="#F0E68C" />
+  </g>
+
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">S'entraider.</tspan></tspan>
+    <tspan x="150" dy="24">Ils se réveillent ensemble au début</tspan>
+    <tspan x="150" dy="17">pour se connaître. Ils sont appelés</tspan>
+    <tspan x="150" dy="17">pendant la nuit (un tour sur deux, ou</tspan>
+    <tspan x="150" dy="17">au bon vouloir du meneur) et peuvent se</tspan>
+    <tspan x="150" dy="17">concerter en silence.</tspan>
+  </text>
+<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Village</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">+1</text></svg>

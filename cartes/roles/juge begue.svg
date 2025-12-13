@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#2F4F4F" stroke-width="3" rx="10" ry="10" />
+  <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#2F4F4F" text-anchor="middle" id="role">Juge Bègue</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Personnages</text>
+
+  <g transform="translate(100, 110)">
+    <rect x="60" y="40" width="30" height="10" fill="#8B4513" />
+    <rect x="40" y="35" width="20" height="20" fill="#A9A9A9" />
+    <text x="30" y="80" font-size="30" fill="#2F4F4F" text-anchor="middle">...</text>
+  </g>
+
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Influencer le vote.</tspan></tspan>
+    <tspan x="150" dy="24">En début de partie, il défini un signe</tspan>
+    <tspan x="150" dy="17">avec le meneur. Une fois par partie,</tspan>
+    <tspan x="150" dy="17">il peut faire le signe au meneur pour</tspan>
+    <tspan x="150" dy="17">refaire un vote, immédiatement et sans</tspan>
+    <tspan x="150" dy="17">débat.</tspan>
+  </text>
+<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Village</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">0</text></svg>

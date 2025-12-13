@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Loups-Garous — Éditeur d’impression</title>
+    <meta
+      name="description"
+      content="Sélectionne les cartes (SVG), règle tailles/espacements/traits de coupe, et imprime recto/verso." />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./print.css" />
+  </head>
+  <body>
+    <header class="topbar no-print">
+      <div class="container">
+        <h1>Éditeur d’impression</h1>
+        <p class="subtitle">Sélection des cartes · Mise en page · Recto/verso</p>
+      </div>
+    </header>
+
+    <main class="container" style="padding: 16px 0">
+      <section class="card no-print">
+        <div class="row row-tight">
+          <h2 style="margin: 0">Réglages</h2>
+          <div class="actions">
+            <a class="btn secondary" href="./">Retour</a>
+            <button id="btn-print" class="btn">Imprimer</button>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="grid print-grid">
+          <section class="card">
+            <h2>Cartes à imprimer</h2>
+            <div class="row row-tight" style="margin-bottom: 10px">
+              <label class="field full">
+                <span>Rechercher</span>
+                <input id="role-filter" type="search" placeholder="Ex: Voyante, Villageois, Loup…" />
+              </label>
+              <label class="toggle" style="margin-top: 18px">
+                <input id="include-compositions" type="checkbox" />
+                <span>Inclure les cartes « compositions »</span>
+              </label>
+              <label class="toggle" style="margin-top: 18px">
+                <input id="include-resources" type="checkbox" />
+                <span>Inclure les cartes « ressources »</span>
+              </label>
+              <div class="actions">
+                <button id="btn-defaults" class="btn secondary">Valeurs par défaut</button>
+                <button id="btn-clear-counts" class="btn secondary">Tout à 0</button>
+              </div>
+            </div>
+            <div id="print-errors" class="callout" hidden></div>
+            <div class="hint" style="margin-bottom: 10px">
+              Astuce: les rôles sont uniques par défaut, sauf packs/duplicables configurés.
+            </div>
+            <div class="table-wrap">
+              <table class="table" id="roles-table">
+                <thead>
+                  <tr>
+                    <th style="width: 42%">Rôle</th>
+                    <th>Camp</th>
+                    <th style="width: 120px">Quantité</th>
+                    <th style="width: 120px">Aperçu</th>
+                  </tr>
+                </thead>
+                <tbody id="roles-tbody"></tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="card">
+            <h2>Mise en page</h2>
+
+            <div class="row row-tight">
+              <label class="field">
+                <span>Contrainte taille</span>
+                <select id="size-mode" class="select">
+                  <option value="width" selected>Imposer largeur</option>
+                  <option value="height">Imposer hauteur</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>Largeur (mm)</span>
+                <input id="card-width" type="number" step="0.1" min="10" value="63.5" />
+              </label>
+              <label class="field">
+                <span>Hauteur (mm)</span>
+                <input id="card-height" type="number" step="0.1" min="10" value="88" />
+              </label>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="row row-tight">
+              <label class="field">
+                <span>Espacement (mm)</span>
+                <input id="gap-mm" type="number" step="0.1" min="0" value="0" />
+              </label>
+
+              <label class="toggle" style="margin-top: 18px">
+                <input id="cut-lines" type="checkbox" checked/>
+                <span>Traits de coupe</span>
+              </label>
+
+              <label class="field">
+                <span>Largeur trait (mm)</span>
+                <input id="cut-line-mm" type="number" step="0.1" min="0" value="0.2" />
+              </label>
+            </div>
+
+            <div class="hint">
+              Les traits de coupe dessinent un cadre sur chaque carte. L’espacement peut être 0.
+            </div>
+
+            <div class="divider"></div>
+
+            <h2>Alignement & marges</h2>
+
+            <div class="row row-tight">
+              <label class="field">
+                <span>Alignement horizontal</span>
+                <select id="align-x" class="select">
+                  <option value="center" selected>Centré</option>
+                  <option value="left">Gauche</option>
+                  <option value="right">Droite</option>
+                </select>
+              </label>
+
+              <label class="field" id="margin-x-field">
+                <span>Marge X (mm)</span>
+                <input id="margin-x" type="number" step="0.1" min="0" value="8" />
+              </label>
+
+              <label class="field">
+                <span>Alignement vertical</span>
+                <select id="align-y" class="select">
+                  <option value="center" selected>Centré</option>
+                  <option value="top">Haut</option>
+                  <option value="bottom">Bas</option>
+                </select>
+              </label>
+
+              <label class="field" id="margin-y-field">
+                <span>Marge Y (mm)</span>
+                <input id="margin-y" type="number" step="0.1" min="0" value="8" />
+              </label>
+            </div>
+
+            <div class="hint">
+              Les marges ne s’appliquent que si l’alignement n’est pas “Centré”.
+            </div>
+
+            <div class="divider"></div>
+
+            <h2>Recto / verso</h2>
+            <label class="toggle">
+              <input id="print-backs" type="checkbox" checked/>
+              <span>Imprimer le dos des cartes</span>
+            </label>
+
+            <div class="row row-tight" style="margin-top: 10px">
+              <label class="field">
+                <span>Mode</span>
+                <select id="back-mode" class="select" disabled>
+                  <option value="alternate">Alternance (recto puis dos)</option>
+                  <option value="batch">Tous rectos puis tous dos</option>
+                </select>
+              </label>
+              <div class="hint" style="flex: 1; align-self: flex-end">
+                Important: pour alternance, réinsère les feuilles dans le bon sens (dépend de l’imprimante).
+              </div>
+            </div>
+
+            <div id="back-offsets" class="row row-tight" style="margin-top: 10px">
+              <label class="field">
+                <span>Offset dos X (mm)</span>
+                <input id="back-offset-x" type="number" step="0.1" value="0" />
+              </label>
+              <label class="field">
+                <span>Offset dos Y (mm)</span>
+                <input id="back-offset-y" type="number" step="0.1" value="0" />
+              </label>
+              <div class="hint" style="flex: 1; align-self: flex-end">
+                Appliqué uniquement au dos (utile si l’impression recto/verso de l’imprimante décale).
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="card" style="margin-top: 16px">
+        <div class="row row-tight no-print" style="margin-bottom: 10px">
+          <h2 style="margin: 0">Aperçu imprimable</h2>
+          <div class="hint">
+            Cette zone correspond à la sortie print (Ctrl+P). Les contrôles ci-dessus n’apparaissent pas à l’impression.
+          </div>
+        </div>
+
+        <div id="print-preview" class="print-preview"></div>
+      </section>
+    </main>
+
+    <script type="module" src="./print.js"></script>
+  </body>
+</html>

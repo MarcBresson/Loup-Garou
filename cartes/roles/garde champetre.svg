@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#8A2BE2" stroke-width="3" rx="10" ry="10" />
+  <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#8A2BE2" text-anchor="middle" id="role">Garde Champêtre</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Personnages</text>
+
+  <g transform="translate(150, 170)">
+    
+    <ellipse cx="0" cy="0" rx="35" ry="18" fill="none" stroke="#8A2BE2" stroke-width="3" />
+    <ellipse cx="0" cy="10" rx="35" ry="18" fill="none" stroke="#8A2BE2" stroke-width="3" />
+    <line x1="-35" y1="0" x2="-35" y2="10" stroke="#8A2BE2" stroke-width="3" />
+    <line x1="35" y1="0" x2="35" y2="10" stroke="#8A2BE2" stroke-width="3" />
+
+    
+    <line x1="-25" y1="0" x2="-10" y2="10" stroke="#8A2BE2" stroke-width="2" />
+    <line x1="-10" y1="0" x2="10" y2="10" stroke="#8A2BE2" stroke-width="2" />
+    <line x1="10" y1="0" x2="25" y2="10" stroke="#8A2BE2" stroke-width="2" />
+    <line x1="-25" y1="10" x2="-10" y2="0" stroke="#8A2BE2" stroke-width="2" />
+    <line x1="-10" y1="10" x2="10" y2="0" stroke="#8A2BE2" stroke-width="2" />
+    <line x1="10" y1="10" x2="25" y2="0" stroke="#8A2BE2" stroke-width="2" />
+
+    
+    <line x1="-30" y1="-25" x2="-5" y2="-5" stroke="#8A2BE2" stroke-width="4" stroke-linecap="round" />
+    <line x1="30" y1="-25" x2="5" y2="-5" stroke="#8A2BE2" stroke-width="4" stroke-linecap="round" />
+    <circle cx="-30" cy="-25" r="5" fill="#8A2BE2" />
+    <circle cx="30" cy="-25" r="5" fill="#8A2BE2" />
+  </g>
+
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Maintenir l'ordre.</tspan></tspan>
+    <tspan x="150" dy="24">Le Garde Champêtre peut interdire à</tspan>
+    <tspan x="150" dy="17">un joueur de prendre la parole</tspan>
+    <tspan x="150" dy="17">pendant tout un tour de débat, par</tspan>
+    <tspan x="150" dy="17">vote du village ou par décision du</tspan>
+    <tspan x="150" dy="17">maître de jeu.</tspan>
+  </text>
+<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Village</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">+1</text></svg>

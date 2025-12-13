@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#4B0082" stroke-width="3" rx="10" ry="10" />
+
+  <text x="150" y="46" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#4B0082" text-anchor="middle">Composition</text>
+  <text x="150" y="68" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle">18 joueurs</text>
+
+  <text x="150" y="100" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">A — Maxi classique :</tspan>
+    <tspan x="150" dy="20">Voyante · Sorcière</tspan>
+    <tspan x="150" dy="16">Corbeau · Salvateur</tspan>
+    <tspan x="150" dy="16">Chasseur · Montreur d'Ours</tspan>
+    <tspan x="150" dy="16">Noctambule · Gitane</tspan>
+    <tspan x="150" dy="16">4× Simple Loup-Garou</tspan>
+    <tspan x="150" dy="16">8× Simple Villageois</tspan>
+
+    <tspan x="150" dy="22" font-weight="bold">B — Loups menaçants :</tspan>
+    <tspan x="150" dy="20">Sorcière · Infect Père des Loups</tspan>
+    <tspan x="150" dy="16">Voyante · Grand-Méchant-Loup</tspan>
+    <tspan x="150" dy="16">Renard · Servante Dévouée</tspan>
+    <tspan x="150" dy="16">Corbeau · Juge Bègue</tspan>
+    <tspan x="150" dy="16">2× Simple Loup-Garou</tspan>
+    <tspan x="150" dy="16">6× Simple Villageois</tspan>
+  </text>
+
+  <text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Compo</text>
+  <text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end"></text>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#2E8B57" stroke-width="3" rx="10" ry="10" />
+  <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#228B22" text-anchor="middle" id="role">Simple Villageois</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Loups-Garous de Thiercelieux</text>
+
+  <g transform="translate(100, 120)">
+    <rect x="25" y="40" width="50" height="50" fill="#D2B48C" />
+    <polygon points="15,40 85,40 50,10" fill="#A0522D" />
+    <rect x="45" y="65" width="10" height="15" fill="#8B4513" />
+  </g>
+
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Gagner avec le village.</tspan></tspan>
+    <tspan x="150" dy="24">Ce rôle n'a aucun pouvoir spécial.</tspan>
+    <tspan x="150" dy="17">Il doit utiliser son sens de</tspan>
+    <tspan x="150" dy="17">l'observation et la discussion pour</tspan>
+    <tspan x="150" dy="17">démasquer les Loups-Garous.</tspan>
+  </text>
+<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Village</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">0</text></svg>

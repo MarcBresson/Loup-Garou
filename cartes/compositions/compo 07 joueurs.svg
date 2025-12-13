@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#4B0082" stroke-width="3" rx="10" ry="10" />
+
+  <text x="150" y="46" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#4B0082" text-anchor="middle">Composition</text>
+  <text x="150" y="68" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle">7 joueurs</text>
+
+  <text x="150" y="100" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">A — Info rapide :</tspan>
+    <tspan x="150" dy="20">Voyante · Corbeau</tspan>
+    <tspan x="150" dy="16">Petite Fille · Bouc Émissaire</tspan>
+    <tspan x="150" dy="16">1× Simple Loup-Garou</tspan>
+    <tspan x="150" dy="16">2× Simple Villageois</tspan>
+
+    <tspan x="150" dy="22" font-weight="bold">B — Variants et bluff :</tspan>
+    <tspan x="150" dy="20">Renard · Comédien · Chien-Loup</tspan>
+    <tspan x="150" dy="16">Idiot du Village</tspan>
+    <tspan x="150" dy="16">1× Simple Loup-Garou</tspan>
+    <tspan x="150" dy="16">2× Simple Villageois</tspan>
+  </text>
+
+  <text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Compo</text>
+  <text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end"></text>
+</svg>

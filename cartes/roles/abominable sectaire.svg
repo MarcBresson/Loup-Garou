@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#6A5ACD" stroke-width="3" rx="10" ry="10" />
+  <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#483D8B" text-anchor="middle" id="role">Abominable Sectaire</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Personnages</text>
+
+  <g transform="translate(100, 110)">
+    <circle cx="50" cy="50" r="45" fill="none" stroke="#483D8B" stroke-width="3" />
+    <circle cx="50" cy="50" r="30" fill="#6A5ACD" />
+    <path d="M50 20 L65 50 L50 80 L35 50 Z" fill="#fff" />
+  </g>
+
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Gagner avec sa secte.</tspan></tspan>
+    <tspan x="150" dy="24">Il choisit un autre joueur. Leur objectif</tspan>
+    <tspan x="150" dy="17">est de gagner ensemble (soit avec les</tspan>
+    <tspan x="150" dy="17">villageois, soit avec les loups, selon</tspan>
+    <tspan x="150" dy="17">le rôle du Sectaire). Si l'un gagne,</tspan>
+    <tspan x="150" dy="17">l'autre gagne aussi.</tspan>
+  </text>
+<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Neutre (lié)</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">-3</text></svg>

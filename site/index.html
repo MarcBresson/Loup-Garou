@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Loups-Garous — Assistant de composition & Meneur</title>
+    <meta
+      name="description"
+      content="Génère des compositions équilibrées (6–18 joueurs), permet des compositions personnalisées, et donne les consignes MJ tour par tour."
+    />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container">
+        <h1>Loups-Garous</h1>
+        <p class="subtitle">Compositions équilibrées · Éditeur · Assistant Meneur de Jeu</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card" id="setup-bar">
+        <div class="row">
+          <div>
+            <h2>1) Nombre de joueurs</h2>
+            <label class="field">
+              <span>Joueurs</span>
+              <input id="players" type="number" min="6" max="18" value="10" />
+            </label>
+            <div class="hint">
+              Suggestions disponibles de <strong>6</strong> à <strong>18</strong> joueurs.
+            </div>
+          </div>
+
+          <div>
+            <h2>2) Mode</h2>
+            <div class="segmented" role="tablist" aria-label="Mode">
+              <button class="seg" id="tab-suggest" aria-selected="true">Suggestions</button>
+              <button class="seg" id="tab-custom" aria-selected="false">Composition perso</button>
+            </div>
+
+            <div class="hint">
+              Conseil: choisis une suggestion puis clique “Utiliser” pour l’éditer ou lancer l’assistant.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid">
+        <section class="card" id="view-suggest">
+          <h2>Suggestions</h2>
+          <div id="suggestions" class="stack"></div>
+        </section>
+
+        <section class="card" id="view-custom" hidden>
+          <div class="row row-tight">
+            <h2>Composition personnalisée</h2>
+            <div class="actions">
+              <button id="btn-clear" class="btn secondary">Vider</button>
+              <button id="btn-export" class="btn secondary">Exporter</button>
+              <label class="btn secondary file">
+                Importer
+                <input id="file-import" type="file" accept="application/json" hidden />
+              </label>
+            </div>
+          </div>
+
+          <div class="row row-tight">
+            <label class="field full">
+              <span>Ajouter un rôle</span>
+              <input id="role-search" type="search" placeholder="Ex: Voyante, Simple Loup-Garou, Deux Sœurs…" />
+            </label>
+            <button id="btn-add" class="btn">Ajouter</button>
+          </div>
+          <div id="role-pills" class="pills"></div>
+
+          <div class="divider"></div>
+          <div id="custom-errors" class="callout" hidden></div>
+          <div id="custom-stats" class="stats"></div>
+
+          <div class="divider"></div>
+          <div class="actions" style="justify-content:flex-end">
+            <button id="btn-custom-to-mj" class="btn">Utiliser dans l’assistant</button>
+          </div>
+        </section>
+
+        <section id="view-mj" class="mj-grid" hidden>
+          <section class="card mj-players-card">
+            <div class="row row-tight">
+              <h2>Joueurs</h2>
+            </div>
+            <p class="hint" style="margin-top:8px">
+              Renomme les joueurs au début, puis bascule “vivant/mort” au fil de la partie.
+            </p>
+            <div id="mj-players" class="stack dense" style="margin-top:10px"></div>
+          </section>
+
+          <section class="card mj-step-card">
+            <div class="row row-tight" style="margin-bottom: 12px">
+              <h2 style="margin:0; font-size:16px">Étape en cours</h2>
+              <div class="actions">
+                <button id="btn-mj-reset" class="btn secondary">Retour aux compositions</button>
+                <button id="btn-mj-prev" class="btn secondary">Étape précédente</button>
+                <button id="btn-mj-next" class="btn">Prochaine étape</button>
+              </div>
+            </div>
+
+            <div class="hint">
+              L’assistant se base sur la composition actuelle (suggestion “utilisée” ou composition perso).
+            </div>
+
+            <div id="mj-errors" class="callout" hidden></div>
+
+            <div id="mj-state" class="mj-state"></div>
+
+            <div id="mj-actions" class="step" hidden>
+              <h3>Action de l'étape</h3>
+              <div id="mj-actions-body" class="stack" style="margin-top:10px"></div>
+            </div>
+
+            <div id="mj-instructions" class="stack"></div>
+          </section>
+        </section>
+      </section>
+
+      <section class="card">
+        <h2>Cartes</h2>
+        <p class="hint">
+          Les fichiers SVG sont dans <code>cartes/roles/</code>. Sur GitHub Pages, tu peux les ouvrir via le dépôt.
+        </p>
+        <div class="actions">
+          <a class="btn" href="./print.html">Éditeur d’impression</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          Site statique — fonctionne hors-ligne après chargement. Données: tableau des rôles dans <code>README.md</code>.
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#9370DB" stroke-width="3" rx="10" ry="10" />
+  <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#9370DB" text-anchor="middle" id="role">Voyante d'Aura</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Wolfy</text>
+
+  <g transform="translate(90, 120)">
+    <ellipse cx="60" cy="50" rx="35" ry="20" fill="none" stroke="#9370DB" stroke-width="2.5" />
+    <circle cx="60" cy="50" r="12" fill="#9370DB" stroke="#4B0082" stroke-width="2" />
+    <circle cx="60" cy="50" r="6" fill="#4B0082" />
+    
+    <circle cx="25" cy="50" r="15" fill="#FFD700" opacity="0.3" />
+    <circle cx="25" cy="50" r="12" fill="#FFD700" opacity="0.5" />
+    <circle cx="25" cy="50" r="8" fill="#FFD700" opacity="0.7" />
+    <path d="M25 35 L23 30 L27 30 Z" fill="#FFD700" />
+    <path d="M25 65 L23 70 L27 70 Z" fill="#FFD700" />
+    <path d="M10 50 L5 48 L5 52 Z" fill="#FFD700" />
+    <path d="M40 50 L45 48 L45 52 Z" fill="#FFD700" />
+    
+    <circle cx="95" cy="50" r="15" fill="#8B0000" opacity="0.3" />
+    <circle cx="95" cy="50" r="12" fill="#8B0000" opacity="0.5" />
+    <circle cx="95" cy="50" r="8" fill="#8B0000" opacity="0.7" />
+    <path d="M95 35 L93 30 L97 30 Z" fill="#8B0000" />
+    <path d="M95 65 L93 70 L97 70 Z" fill="#8B0000" />
+    <path d="M80 50 L75 48 L75 52 Z" fill="#8B0000" />
+    <path d="M110 50 L115 48 L115 52 Z" fill="#8B0000" />
+  </g>
+
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Identifier les tueurs.</tspan></tspan>
+    <tspan x="150" dy="24">Chaque nuit, la Voyante d'Aura peut</tspan>
+    <tspan x="150" dy="17">connaître l'Aura d'un joueur. Une</tspan>
+    <tspan x="150" dy="17">Aura obscure indique un rôle capable</tspan>
+    <tspan x="150" dy="17">de tuer (loup, chasseur, sorcière, ...).</tspan>
+  </text>
+<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Village</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">+4</text></svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#8B0000" stroke-width="3" rx="10" ry="10" />
+  <text x="150" y="50" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#8B0000" text-anchor="middle" id="role">Grand-Méchant-Loup</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Personnages</text>
+
+  <g transform="translate(100, 110)">
+    <path d="M10 10 L40 90 M30 10 L60 90 M50 10 L80 90" stroke="#8B0000" stroke-width="5" stroke-linecap="round" />
+    <path d="M20 15 L50 95 M40 15 L70 95 M60 15 L90 95" stroke="#FF0000" stroke-width="3" stroke-linecap="round" opacity="0.6" />
+  </g>
+
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Tuer les villageois.</tspan></tspan>
+    <tspan x="150" dy="24">Tant qu'aucun loup-garou n'est mort</tspan>
+    <tspan x="150" dy="17">il se réveille une seconde fois la</tspan>
+    <tspan x="150" dy="17">nuit pour dévorer une deuxième</tspan>
+    <tspan x="150" dy="17">victime seul.</tspan>
+  </text>
+<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Loup</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">-10</text></svg>

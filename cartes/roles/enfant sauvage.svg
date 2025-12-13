@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#228B22" stroke-width="3" rx="10" ry="10" />
+  <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#006400" text-anchor="middle" id="role">Enfant Sauvage</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Personnages</text>
+
+  <g transform="translate(100, 110)">
+    <path d="M30 50 Q 30 20, 40 10 Q 50 20, 50 50 Z" fill="#DEB887" />
+    <circle cx="40" cy="60" r="15" fill="#DEB887" />
+    <circle cx="70" cy="30" r="8" fill="#555" />
+    <circle cx="90" cy="40" r="8" fill="#555" />
+    <circle cx="60" cy="45" r="8" fill="#555" />
+    <ellipse cx="75" cy="60" rx="15" ry="12" fill="#555" />
+  </g>
+
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Variable.</tspan></tspan>
+    <tspan x="150" dy="24">Il choisit un mentor au début. Si le</tspan>
+    <tspan x="150" dy="17">mentor meurt, l'Enfant Sauvage</tspan>
+    <tspan x="150" dy="17">devient un Loup-Garou la nuit</tspan>
+    <tspan x="150" dy="17">suivante.</tspan>
+  </text>
+<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Variable</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">-2</text></svg>

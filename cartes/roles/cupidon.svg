@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#FF69B4" stroke-width="3" rx="10" ry="10" />
+  <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#FF1493" text-anchor="middle" id="role">Cupidon</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Loups-Garous de Thiercelieux</text>
+
+  <g transform="translate(100, 110)">
+    <path d="M50 80 C 10 50, 0 20, 30 10 C 45 5, 50 25, 50 25 C 50 25, 55 5, 70 10 C 100 20, 90 50, 50 80" fill="#FFC0CB" stroke="#FF1493" stroke-width="2" />
+    <line x1="10" y1="70" x2="90" y2="20" stroke="#000" stroke-width="3" />
+    <path d="M95 16 L85 16 L95 26 Z" fill="#000" />
+  </g>
+
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Créer un couple.</tspan></tspan>
+    <tspan x="150" dy="24">La première nuit, il désigne deux</tspan>
+    <tspan x="150" dy="17">amoureux. Si l'un meurt, l'autre</tspan>
+    <tspan x="150" dy="17">meurt de chagrin immédiatement. Ils</tspan>
+    <tspan x="150" dy="17">doivent survivre ensemble.</tspan>
+  </text>
+<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Variable (couple)</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">0</text></svg>

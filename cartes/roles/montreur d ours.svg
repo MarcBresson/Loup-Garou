@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#8B4513" stroke-width="3" rx="10" ry="10" />
+  <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#8B4513" text-anchor="middle" id="role">Montreur d'Ours</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Personnages</text>
+
+  <g transform="translate(150, 160)">
+    
+    <ellipse cx="-30" cy="-30" rx="12" ry="16" fill="#696969" />
+    <ellipse cx="-10" cy="-35" rx="12" ry="16" fill="#696969" />
+    <ellipse cx="10" cy="-35" rx="12" ry="16" fill="#696969" />
+    <ellipse cx="30" cy="-30" rx="12" ry="16" fill="#696969" />
+
+    
+    <path d="M -40,0              Q 0,50 40,0              Q 20,30 0,35              Q -20,30 -40,0 Z" fill="#514039ff" />
+  </g>
+
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Prévoyance.</tspan></tspan>
+    <tspan x="150" dy="24">Si l'un des voisins du Montreur</tspan>
+    <tspan x="150" dy="17">d'Ours est un loup-garou, le MJ</tspan>
+    <tspan x="150" dy="17">annonce au début de la nuit "L'ours</tspan>
+    <tspan x="150" dy="17">grogne !". Information précieuse</tspan>
+    <tspan x="150" dy="17">pour le village.</tspan>
+  </text>
+<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Village</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">+5</text></svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#A9A9A9" stroke-width="3" rx="10" ry="10" />
+  <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#696969" text-anchor="middle" id="role">Loup-Garou Blanc</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Nouvelle Lune</text>
+
+  <g transform="translate(100, 120)">
+    <circle cx="50" cy="50" r="45" fill="#F0F0F0" stroke="#A9A9A9" stroke-width="2" />
+    <circle cx="35" cy="45" r="5" fill="#ADD8E6" />
+    <circle cx="65" cy="45" r="5" fill="#ADD8E6" />
+    <path d="M40 70 L60 70 L50 85 Z" fill="#D3D3D3" />
+  </g>
+
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Gagner seul.</tspan></tspan>
+    <tspan x="150" dy="24">Il chasse avec les autres loups la</tspan>
+    <tspan x="150" dy="17">nuit. Mais une nuit sur deux, il</tspan>
+    <tspan x="150" dy="17">peut se réveiller seul pour dévorer</tspan>
+    <tspan x="150" dy="17">un autre loup-garou.</tspan>
+  </text>
+<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Loup (solo)</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">-4</text></svg>

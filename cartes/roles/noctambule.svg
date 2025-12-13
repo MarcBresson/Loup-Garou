@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#191970" stroke-width="3" rx="10" ry="10" />
+  <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#191970" text-anchor="middle" id="role">Noctambule</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Loup-Garou en Ligne</text>
+
+  <g transform="translate(100, 110)">
+    <circle cx="30" cy="50" r="15" fill="#D3D3D3" />
+    <circle cx="70" cy="50" r="15" fill="#D3D3D3" />
+    <path d="M40 70 L60 70 M40 75 L45 70 L40 65 Z" stroke="#191970" stroke-width="3" fill="none" />
+    <path d="M60 30 L40 30 M55 35 L60 30 L55 25 Z" stroke="#191970" stroke-width="3" fill="none" />
+  </g>
+
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Perturber la nuit.</tspan></tspan>
+    <tspan x="150" dy="24">Chaque nuit, il choisi la personne</tspan>
+    <tspan x="150" dy="17">chez qui il ira dormir, la privant de</tspan>
+    <tspan x="150" dy="17">de ses pouvoirs nocturnes. La</tspan>
+    <tspan x="150" dy="17">personne choisie découvre l'identité</tspan>
+    <tspan x="150" dy="17">du noctambule.</tspan>
+  </text>
+<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Village</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">+1</text></svg>

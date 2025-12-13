@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#D2691E" stroke-width="3" rx="10" ry="10" />
+  <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#D2691E" text-anchor="middle" id="role">Renard</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Personnages</text>
+
+  <g transform="translate(100, 110)">
+    <path d="M50 80 L20 10 L80 10 Z" fill="#D2691E" />
+    <path d="M40 50 L60 50 L50 70 Z" fill="#fff" />
+    <circle cx="35" cy="30" r="3" fill="#000" />
+    <circle cx="65" cy="30" r="3" fill="#000" />
+    <path d="M80 50 Q 100 60 80 80 Z" fill="#D2691E" />
+  </g>
+
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Débusquer les loups.</tspan></tspan>
+    <tspan x="150" dy="24">Chaque nuit, il peut désigner un</tspan>
+    <tspan x="150" dy="17">groupe de trois joueurs. S'il y a un</tspan>
+    <tspan x="150" dy="17">loup-garou, le meneur lui indique</tspan>
+    <tspan x="150" dy="17">« oui » et il continue le soir</tspan>
+    <tspan x="150" dy="17">suivant. Sinon, il perd son pouvoir.</tspan>
+  </text>
+<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Village</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">+4</text></svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#4a3b2a" stroke-width="3" rx="10" ry="10" />
+  <text x="150" y="50" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#4a3b2a" text-anchor="middle" id="role">Infect Père des Loups</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Personnages</text>
+
+  <g transform="translate(110, 110)">
+     <path d="M10 10 C 30 30, 30 60, 10 90" stroke="#333" stroke-width="8" fill="none" stroke-linecap="round" />
+     <circle cx="10" cy="95" r="5" fill="#32CD32" />
+     <circle cx="10" cy="110" r="4" fill="#32CD32" />
+     <path d="M5 90 Q 15 95 5 100" stroke="#32CD32" stroke-width="3" fill="none" />
+  </g>
+
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Tuer les villageois.</tspan></tspan>
+    <tspan x="150" dy="24">Une fois par partie, il peut</tspan>
+    <tspan x="150" dy="17">transformer la victime des loups en</tspan>
+    <tspan x="150" dy="17">loup-garou au lieu de la dévorer.</tspan>
+  </text>
+<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Loup</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">-7</text></svg>

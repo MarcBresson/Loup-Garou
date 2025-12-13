@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#FFD700" stroke-width="3" rx="10" ry="10" />
+
+  <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#8B0000" text-anchor="middle">Spiritisme</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle">Gitane</text>
+
+  <g transform="translate(100, 110)">
+    <path d="M10 90 L90 90 L50 20 Z" fill="#D2B48C" />
+    <circle cx="50" cy="50" r="25" fill="#4B0082" stroke="#FFD700" stroke-width="2" />
+    <text x="50" y="58" font-size="20" text-anchor="middle" fill="#fff">?</text>
+  </g>
+
+  <text x="150" y="248" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">Questions :</tspan>
+
+    <tspan x="150" dy="22">1) Est-ce qu'un Loup-Garou porte</tspan>
+    <tspan x="150" dy="17">des lunettes ?</tspan>
+
+    <tspan x="150" dy="22">2) Est-ce qu'un des deux joueurs</tspan>
+    <tspan x="150" dy="17">pointés par le maître du jeu sont</tspan>
+    <tspan x="150" dy="17">dans le même camp ?</tspan>
+
+    <tspan x="150" dy="22">3) La Sorcière est-elle un homme ?</tspan>
+
+    <tspan x="150" dy="22">4) Le Capitaine est-il un Villageois ?</tspan>
+  </text>
+</svg>

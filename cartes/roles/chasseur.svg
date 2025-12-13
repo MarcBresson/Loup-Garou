@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#556B2F" stroke-width="3" rx="10" ry="10" />
+  <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#556B2F" text-anchor="middle" id="role">Chasseur</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Loups-Garous de Thiercelieux</text>
+
+  <g transform="translate(80, 130)">
+    <path d="M10 50 L40 50 L50 40 L10 30 Z" fill="#8B4513" />
+    <rect x="50" y="38" width="90" height="6" fill="#333" />
+    <circle cx="135" cy="35" r="2" fill="#333" />
+    <rect x="50" y="44" width="20" height="10" fill="#8B4513" />
+  </g>
+
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Vengeance.</tspan></tspan>
+    <tspan x="150" dy="24">Si le Chasseur meurt (tué par les</tspan>
+    <tspan x="150" dy="17">loups ou par le vote), il a le</tspan>
+    <tspan x="150" dy="17">pouvoir de répliquer immédiatement</tspan>
+    <tspan x="150" dy="17">en tuant un autre joueur de son</tspan>
+    <tspan x="150" dy="17">choix.</tspan>
+  </text>
+<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Village</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">+3</text></svg>

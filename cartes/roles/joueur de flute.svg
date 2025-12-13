@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#800080" stroke-width="3" rx="10" ry="10" />
+  <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#800080" text-anchor="middle" id="role">Joueur de Flûte</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Nouvelle Lune</text>
+
+  <g transform="translate(110, 110)">
+    <rect x="10" y="40" width="80" height="10" fill="#DAA520" rx="2" />
+    <circle cx="20" cy="45" r="2" fill="#000" />
+    <circle cx="35" cy="45" r="2" fill="#000" />
+    <circle cx="50" cy="45" r="2" fill="#000" />
+    
+    <text x="60" y="30" font-size="20" fill="#800080">♪</text>
+    <text x="80" y="60" font-size="20" fill="#800080">♫</text>
+    <path d="M10 30 Q 30 10, 50 30 T 90 30" stroke="#800080" fill="none" stroke-width="2" opacity="0.5" />
+  </g>
+
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Gagner seul.</tspan></tspan>
+    <tspan x="150" dy="24">Chaque nuit, il charme un ou deux joueurs</tspan>
+    <tspan x="150" dy="17">(en fonction du nombre de joueurs). En fin</tspan>
+    <tspan x="150" dy="17">de nuit, tous les charmés se réveillent.</tspan>
+    <tspan x="150" dy="17">Il gagne si tous les joueurs vivants (sauf</tspan>
+    <tspan x="150" dy="17">lui) ont été charmés.</tspan>
+  </text>
+<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Neutre (solo)</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">-4</text></svg>

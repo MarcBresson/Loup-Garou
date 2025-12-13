@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#4B0082" stroke-width="3" rx="10" ry="10" />
+  <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#4B0082" text-anchor="middle" id="role">Voyante</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Loups-Garous de Thiercelieux</text>
+
+  <g transform="translate(100, 110)">
+    <path d="M20 90 L80 90 L70 70 L30 70 Z" fill="#DAA520" />
+    <circle cx="50" cy="45" r="40" fill="#E6E6FA" stroke="#4B0082" stroke-width="2" />
+    <path d="M20 45 Q 50 15, 80 45 Q 50 75, 20 45" fill="#fff" />
+    <circle cx="50" cy="45" r="12" fill="#4B0082" />
+  </g>
+
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Démasquer les loups.</tspan></tspan>
+    <tspan x="150" dy="24">Chaque nuit, elle découvre la</tspan>
+    <tspan x="150" dy="17">véritable identité d'un joueur de</tspan>
+    <tspan x="150" dy="17">son choix. Elle doit aider le</tspan>
+    <tspan x="150" dy="17">village sans se faire repérer.</tspan>
+  </text>
+<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Village</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">+8</text></svg>

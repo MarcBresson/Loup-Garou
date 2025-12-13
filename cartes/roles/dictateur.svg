@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
+  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
+  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#8b0000" stroke-width="3" rx="10" ry="10" />
+  <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#8b0000" text-anchor="middle" id="role">Dictateur</text>
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Wolfy</text>
+
+  <g transform="translate(150, 140)">
+    
+    <path d="M -40 -20 L -30 0 L -20 -15 L -10 0 L 0 -20 L 10 0 L 20 -15 L 30 0 L 40 -20 L 40 10 L -40 10 Z" fill="#8b0000" stroke="#333" stroke-width="2" />
+    <circle cx="-30" cy="-15" r="4" fill="#ffd700" />
+    <circle cx="0" cy="-15" r="4" fill="#ffd700" />
+    <circle cx="30" cy="-15" r="4" fill="#ffd700" />
+    
+    
+    <line x1="-25" y1="20" x2="-25" y2="70" stroke="#8b0000" stroke-width="6" stroke-linecap="round" />
+    <circle cx="-25" cy="15" r="8" fill="#ffd700" stroke="#333" stroke-width="2" />
+  </g>
+
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Créer un couple.</tspan></tspan>
+    <tspan x="150" dy="24">Une fois dans la partie, il peut</tspan>
+    <tspan x="150" dy="17">prendre le contrôle du vote du</tspan>
+    <tspan x="150" dy="17">village. S'il fait exécuter un loup,</tspan>
+    <tspan x="150" dy="17">il devient maire. Sinon, il meurt.</tspan>
+  </text>
+<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Village</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">+2</text></svg>
