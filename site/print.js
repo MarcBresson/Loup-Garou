@@ -297,6 +297,7 @@ function renderSheet(parent, opts) {
     cardHmm,
     gapMm,
     cutLines,
+    cutLinesSide,
     cutLineMm,
     alignX,
     alignY,
@@ -305,6 +306,13 @@ function renderSheet(parent, opts) {
     backOffsetXmm,
     backOffsetYmm,
   } = opts.config;
+
+  // Traits de coupe: possibilité de n’afficher que sur recto/dos.
+  // Valeurs: 'front' | 'back' | 'both'
+  const side = cutLinesSide || "both";
+  const isBack = Boolean(opts?.isBack);
+  const shouldShowCutLines =
+    Boolean(cutLines) && (side === "both" || (side === "front" && !isBack) || (side === "back" && isBack));
 
   // Offset optionnel (utilisé pour le dos)
   if (opts?.isBack && (backOffsetXmm || backOffsetYmm)) {
@@ -329,6 +337,9 @@ function renderSheet(parent, opts) {
   // L'idée: l'espace entre cartes est "réservé" au trait.
   const baseGapMm = Number(gapMm) || 0;
   const lineMm = Math.max(0, Number(cutLineMm) || 0);
+  // Important pour le recto/verso: même si les traits ne sont affichés que sur
+  // un seul côté, on conserve le même gap *sur les deux* afin de garder
+  // l'alignement des cartes entre recto et verso.
   const effectiveGapMm = cutLines ? lineMm : baseGapMm;
   grid.style.gap = `${effectiveGapMm}mm`;
 
@@ -339,7 +350,7 @@ function renderSheet(parent, opts) {
   grid.style.alignContent = alignContentByAlignY[alignY] ?? "center";
 
   // Traits de coupe: convertit mm -> px pour un rendu stable
-  const cutLinePx = Math.max(0.1, mmToPx(cutLineMm));
+  const cutLinePx = Math.max(0, mmToPx(cutLineMm));
   grid.style.setProperty("--cutLinePx", `${cutLinePx}px`);
 
   const total = opts.cards.length;
@@ -347,7 +358,7 @@ function renderSheet(parent, opts) {
   for (let idx = 0; idx < total; idx++) {
     const c = opts.cards[idx];
     const cell = document.createElement("div");
-    cell.className = "card-cell" + (cutLines ? " cut-lines" : "");
+    cell.className = "card-cell" + (shouldShowCutLines ? " cut-lines" : "");
     cell.style.width = `${cardWmm}mm`;
     cell.style.height = `${cardHmm}mm`;
 
@@ -447,6 +458,7 @@ function getConfigFromUI() {
 
   const gapMm = clampNumber($("#gap-mm").value, { min: 0, max: 50, fallback: 2 });
   const cutLines = $("#cut-lines").checked;
+  const cutLinesSide = $("#cut-lines-side")?.value || "both";
   const cutLineMm = clampNumber($("#cut-line-mm").value, { min: 0, max: 5, fallback: 0.3 });
 
   const alignX = $("#align-x")?.value || "center";
@@ -468,6 +480,7 @@ function getConfigFromUI() {
     cardHmm,
     gapMm,
     cutLines,
+    cutLinesSide,
     cutLineMm,
     alignX,
     alignY,
@@ -776,6 +789,7 @@ async function main() {
     "#card-height",
     "#gap-mm",
     "#cut-lines",
+    "#cut-lines-side",
     "#cut-line-mm",
     "#align-x",
     "#margin-x",

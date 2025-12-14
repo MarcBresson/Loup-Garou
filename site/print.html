@@ -106,13 +106,22 @@
               </label>
 
               <label class="field">
+                <span>Traits sur</span>
+                <select id="cut-lines-side" class="select">
+                  <option value="both" selected>Recto + Dos</option>
+                  <option value="front">Recto uniquement</option>
+                  <option value="back">Dos uniquement</option>
+                </select>
+              </label>
+
+              <label class="field">
                 <span>Largeur trait (mm)</span>
                 <input id="cut-line-mm" type="number" step="0.1" min="0" value="0.2" />
               </label>
             </div>
 
             <div class="hint">
-              Les traits de coupe dessinent un cadre sur chaque carte. L’espacement peut être 0.
+              Les traits de coupe dessinent un cadre autour de chaque carte pour faciliter la découpe.
             </div>
 
             <div class="divider"></div>
@@ -149,10 +158,6 @@
               </label>
             </div>
 
-            <div class="hint">
-              Les marges ne s’appliquent que si l’alignement n’est pas “Centré”.
-            </div>
-
             <div class="divider"></div>
 
             <h2>Recto / verso</h2>
@@ -176,11 +181,11 @@
 
             <div id="back-offsets" class="row row-tight" style="margin-top: 10px">
               <label class="field">
-                <span>Offset dos X (mm)</span>
+                <span>Décalage horizontal du verso (mm)</span>
                 <input id="back-offset-x" type="number" step="0.1" value="0" />
               </label>
               <label class="field">
-                <span>Offset dos Y (mm)</span>
+                <span>Décalage vertical du verso (mm)</span>
                 <input id="back-offset-y" type="number" step="0.1" value="0" />
               </label>
               <div class="hint" style="flex: 1; align-self: flex-end">
