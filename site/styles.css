@@ -131,6 +131,17 @@ code {
   outline: none;
 }
 
+.field input:disabled {
+  cursor: not-allowed;
+  opacity: 0.55 !important;
+}
+
+.field:has(input:disabled),
+.field:has(select:disabled) {
+  opacity: 0.75;
+}
+
+
 .field.full input {
   width: 100%;
 }
@@ -138,6 +149,11 @@ code {
 .field input:focus {
   border-color: rgba(122, 162, 255, 0.7);
   box-shadow: 0 0 0 4px rgba(122, 162, 255, 0.15);
+}
+
+.field input:disabled:focus {
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: none;
 }
 
 .btn {

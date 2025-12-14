@@ -382,6 +382,52 @@ function estimatePerPage({ cardWmm, cardHmm, gapMm, pageWmm = 210, pageHmm = 297
   return { cols, rows, perPage: cols * rows };
 }
 
+function readMmInputValue(el, { fallback } = {}) {
+  if (!el) return fallback;
+  const raw = String(el.value ?? "").trim();
+  if (!raw) return fallback;
+  const n = Number(raw.replace(",", "."));
+  if (!Number.isFinite(n)) return fallback;
+  return n;
+}
+
+function formatMm(n) {
+  // On garde 1 décimale max
+  const v = Math.round(n * 10) / 10;
+  // tronc le .0 inutile
+  return String(v % 1 === 0 ? Math.trunc(v) : v);
+}
+
+function syncSizeConstraintUI() {
+  const sizeModeEl = $("#size-mode");
+  const wEl = $("#card-width");
+  const hEl = $("#card-height");
+  if (!sizeModeEl || !wEl || !hEl) return;
+
+  const sizeMode = sizeModeEl.value;
+
+  // Ratio par défaut: cartes 63.5x88 mm.
+  const ratio = 88 / 63.5;
+
+  // Valeurs courantes (même si l'input est vide).
+  const w = clampNumber(readMmInputValue(wEl, { fallback: 63.5 }), { min: 10, max: 200, fallback: 63.5 });
+  const h = clampNumber(readMmInputValue(hEl, { fallback: 88 }), { min: 10, max: 300, fallback: 88 });
+
+  if (sizeMode === "width") {
+    // Largeur imposée => hauteur dérivée.
+    wEl.disabled = false;
+    hEl.disabled = true;
+    const derivedH = w * ratio;
+    hEl.value = formatMm(derivedH);
+  } else {
+    // Hauteur imposée => largeur dérivée.
+    hEl.disabled = false;
+    wEl.disabled = true;
+    const derivedW = h / ratio;
+    wEl.value = formatMm(derivedW);
+  }
+}
+
 function getConfigFromUI() {
   const sizeMode = $("#size-mode").value;
   const cardWidthMm = clampNumber($("#card-width").value, { min: 10, max: 200, fallback: 63.5 });
@@ -714,6 +760,9 @@ async function main() {
   renderRolesTable(ROLES, COUNTS);
   renderPreview();
 
+  // Applique la contrainte dès l'initialisation (grise l'input concerné et synchronise la valeur dérivée).
+  syncSizeConstraintUI();
+
   $("#role-filter").addEventListener("input", () => {
     renderRolesTable(filteredRoles(), COUNTS);
   });
@@ -737,11 +786,13 @@ async function main() {
   ];
   for (const sel of rerenderInputs) {
     $(sel).addEventListener("input", () => {
+      syncSizeConstraintUI();
       updateBackModeDisabled();
       updateLayoutControlsDisabled();
       scheduleRenderPreview();
     });
     $(sel).addEventListener("change", () => {
+      syncSizeConstraintUI();
       updateBackModeDisabled();
       updateLayoutControlsDisabled();
       scheduleRenderPreview();
