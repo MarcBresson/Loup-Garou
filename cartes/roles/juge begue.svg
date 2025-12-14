@@ -5,8 +5,8 @@
   <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Personnages</text>
 
   <g transform="translate(100, 110)">
-    <rect x="60" y="40" width="30" height="10" fill="#8B4513" />
-    <rect x="40" y="35" width="20" height="20" fill="#A9A9A9" />
+    <rect x="60" y="40" width="40" height="10" fill="#8B4513" />
+    <rect x="40" y="30" width="20" height="30" fill="#A9A9A9" />
     <text x="30" y="80" font-size="30" fill="#2F4F4F" text-anchor="middle">...</text>
   </g>
 

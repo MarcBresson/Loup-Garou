@@ -1,26 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="300" height="423" viewBox="0 0 300 423">
-  <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" />
-  <rect x="10" y="10" width="280" height="403" fill="none" stroke="#8B4513" stroke-width="3" rx="10" ry="10" />
-  <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#8B4513" text-anchor="middle" id="role">Montreur d'Ours</text>
-  <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Personnages</text>
-
-  <g transform="translate(150, 160)">
-    
-    <ellipse cx="-30" cy="-30" rx="12" ry="16" fill="#696969" />
-    <ellipse cx="-10" cy="-35" rx="12" ry="16" fill="#696969" />
-    <ellipse cx="10" cy="-35" rx="12" ry="16" fill="#696969" />
-    <ellipse cx="30" cy="-30" rx="12" ry="16" fill="#696969" />
-
-    
-    <path d="M -40,0              Q 0,50 40,0              Q 20,30 0,35              Q -20,30 -40,0 Z" fill="#514039ff" />
-  </g>
-
-  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
-    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Prévoyance.</tspan></tspan>
-    <tspan x="150" dy="24">Si l'un des voisins du Montreur</tspan>
-    <tspan x="150" dy="17">d'Ours est un loup-garou, le MJ</tspan>
-    <tspan x="150" dy="17">annonce au début de la nuit "L'ours</tspan>
-    <tspan x="150" dy="17">grogne !". Information précieuse</tspan>
-    <tspan x="150" dy="17">pour le village.</tspan>
-  </text>
-<text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Village</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">+5</text></svg>
+   <rect x="0" y="0" width="300" height="423" fill="#ffffff" rx="15" ry="15" id="rect1" />
+   <rect x="10" y="10" width="280" height="403" fill="none" stroke="#8B4513" stroke-width="3" rx="10" ry="10"
+      id="rect2" />
+   <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#8B4513"
+      text-anchor="middle" id="role">Montreur d'Ours</text><text x="150" y="70" font-family="Arial, sans-serif"
+      font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Personnages</text>
+   <g transform="translate(150, 170)">
+      <path d="M-34.311 42.407c-9.374-1.345-12.666-12.256-10.685-20.382.79-9.79 9.127-15.605 14.91-22.514 5.63-7.668 15.678-8.976 24.35-6.827 8.458 1.374 17.064-2.923 25.414.26 15.127 4.403 26.259 22.376 19.891 37.56C34.321 41.529 20.55 43.602 9.694 41.488c-5.807-.777-11.321-3.3-17.095-3.886-7.716 1.088-14.596 5.965-22.655 5.251a21.779 21.779 0 01-4.255-.445zm-8.847-44.1c-7.948-4.42-3.078-13.561-2.904-20.079-.341-4.539.832-14.924 5.868-14.072-4.038 8.901 3.156 15.465 6.058 22.897 1.048 4.975-2.718 14.035-9.022 11.254zM28.653-8.19c-6.988-5.507-2.672-15.584 3.647-19.487 2.572-3.443-.356-16.833 4.141-7.717 1.042 6.287 1.605 12.744 1.839 19.117-.044 4.578-4.597 10.765-9.627 8.087zm-54.664-5.895c-7.451-5.005-3.49-14.203-1.347-20.74-.172-4.29 1.563-16.081 6.06-14.117-3.13 6.412.486 13.519 3.92 18.927 2.06 5.906.296 19.003-8.633 15.93zm38.967-.842c-7.559-5.736-4.325-16.489.818-22.653 2.414-3.198-.203-12.397 1.956-12.208 4.443 6.52 2.53 15.193 6.374 22.062 1.356 5.161-2.254 15.891-9.148 12.799zm-18.634-1.922C-13.06-21.305-12.013-32.351-6.698-38c3.152-4.612 2.314-15.88 5.003-17.17 3.409 6.963 1.347 15.187 4.948 22.075 3.48 6.367.418 19.633-8.93 16.247z" fill="#6f370f" />
+   </g>
+   <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+      <tspan x="150" dy="0" font-weight="bold" id="tspan6">But : <tspan font-weight="normal" id="tspan5">Prévoyance.
+         </tspan>
+      </tspan>
+      <tspan x="150" dy="24" id="tspan7">Si l'un des voisins du Montreur</tspan>
+      <tspan x="150" dy="17" id="tspan8">d'Ours est un loup-garou, le MJ</tspan>
+      <tspan x="150" dy="17" id="tspan9">annonce au début de la nuit &quot;L'ours</tspan>
+      <tspan x="150" dy="17" id="tspan10">grogne !&quot;. Information précieuse</tspan>
+      <tspan x="150" dy="17" id="tspan11">pour le village.</tspan>
+   </text><text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555"
+      text-anchor="start">Village</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif"
+      font-size="12" fill="#555" text-anchor="end">+4</text>
+</svg>

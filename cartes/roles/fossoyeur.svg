@@ -20,8 +20,9 @@
     </g>
   </g>
 
-  <text x="150" y="265" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
-    <tspan x="150" dy="0">A la mort du Fossoyeur, le Meneur de</tspan>
+  <text x="150" y="270" font-family="Georgia, serif" font-size="13" fill="#333" text-anchor="middle" id="descText">
+    <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Démasquer un loup.</tspan></tspan>
+    <tspan x="150" dy="20">A la mort du Fossoyeur, le Meneur de</tspan>
     <tspan x="150" dy="17">Jeu donne deux noms de joueurs dont</tspan>
     <tspan x="150" dy="17">l'un est un loup-garou. Il ne donne</tspan>
     <tspan x="150" dy="17">pas leur rôle de manière à laisser</tspan>
