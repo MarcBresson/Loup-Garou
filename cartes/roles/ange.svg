@@ -16,5 +16,6 @@
     <tspan x="150" dy="17">réussit à se faire éliminer lors du</tspan>
     <tspan x="150" dy="17">premier vote du village ou par les</tspan>
     <tspan x="150" dy="17">Loups-Garous la première nuit.</tspan>
+    <tspan x="150" dy="17">Sinon, il devient simple villageois.</tspan>
   </text>
 <text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Neutre (solo)</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">-2</text></svg>

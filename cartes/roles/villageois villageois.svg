@@ -4,11 +4,8 @@
   <text x="150" y="50" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#A0522D" text-anchor="middle" id="role">Villageois-Villageois</text>
   <text x="150" y="70" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#555" text-anchor="middle" id="origine">Personnages</text>
 
-  <!-- Pictogramme : villageois au rôle public (aplats colorés) -->
   <g transform="translate(100, 70)" stroke-linecap="round" stroke-linejoin="round">
-    <!-- Silhouette villageois -->
-    <circle cx="50" cy="88" r="13" fill="#eee57dff" stroke-width="3" />
-    <!-- corps rempli (vert village) -->
+    <circle cx="50" cy="88" r="13" fill="#ffd77a" stroke-width="3" />
     <path d="M26 140
              C26 118 36 104 50 104
              C64 104 74 118 74 140
@@ -16,8 +13,7 @@
              L26 152 Z"
           fill="#2E8B57" stroke="none" />
 
-    <!-- Badge 'public' (œil) -->
-    <circle cx="76" cy="56" r="18" fill="#FFD666" />
+    <circle cx="76" cy="56" r="18" fill="#ffd77a" />
     <path d="M64 56
              C67 49 71 45 76 45
              C81 45 85 49 88 56

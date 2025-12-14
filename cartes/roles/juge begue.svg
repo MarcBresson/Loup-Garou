@@ -14,8 +14,8 @@
     <tspan x="150" dy="0" font-weight="bold">But : <tspan font-weight="normal">Influencer le vote.</tspan></tspan>
     <tspan x="150" dy="24">En début de partie, il défini un signe</tspan>
     <tspan x="150" dy="17">avec le meneur. Une fois par partie,</tspan>
-    <tspan x="150" dy="17">il peut faire le signe au meneur pour</tspan>
-    <tspan x="150" dy="17">refaire un vote, immédiatement et sans</tspan>
-    <tspan x="150" dy="17">débat.</tspan>
+    <tspan x="150" dy="17">il peut faire le signe discrètement au</tspan>
+    <tspan x="150" dy="17">meneur pour refaire un vote,</tspan>
+    <tspan x="150" dy="17">immédiatement et sans débat.</tspan>
   </text>
 <text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Village</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">0</text></svg>

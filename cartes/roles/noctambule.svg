@@ -16,7 +16,7 @@
     <tspan x="150" dy="24">Chaque nuit, il choisi la personne</tspan>
     <tspan x="150" dy="17">chez qui il ira dormir, la privant de</tspan>
     <tspan x="150" dy="17">de ses pouvoirs nocturnes. La</tspan>
-    <tspan x="150" dy="17">personne choisie découvre l'identité</tspan>
-    <tspan x="150" dy="17">du noctambule.</tspan>
+    <tspan x="150" dy="17">personne choisie découvre alors</tspan>
+    <tspan x="150" dy="17">l'identité du noctambule.</tspan>
   </text>
 <text id="campTypique" x="18" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="start">Village</text><text id="balance" x="282" y="406" font-family="Arial, sans-serif" font-size="12" fill="#555" text-anchor="end">+1</text></svg>
