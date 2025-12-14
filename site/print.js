@@ -305,6 +305,7 @@ function renderSheet(parent, opts) {
     marginYmm,
     backOffsetXmm,
     backOffsetYmm,
+    frontScalePercent,
   } = opts.config;
 
   // Traits de coupe: possibilité de n’afficher que sur recto/dos.
@@ -313,6 +314,10 @@ function renderSheet(parent, opts) {
   const isBack = Boolean(opts?.isBack);
   const shouldShowCutLines =
     Boolean(cutLines) && (side === "both" || (side === "front" && !isBack) || (side === "back" && isBack));
+
+  // Réduction du recto: on réduit le contenu (image) dans sa cellule,
+  // sans modifier la taille de la cellule (donc sans casser l'alignement recto/verso).
+  const frontScale = clampNumber(frontScalePercent, { min: 50, max: 100, fallback: 100 }) / 100;
 
   // Offset optionnel (utilisé pour le dos)
   if (opts?.isBack && (backOffsetXmm || backOffsetYmm)) {
@@ -366,6 +371,11 @@ function renderSheet(parent, opts) {
       const img = document.createElement("img");
       img.src = c.url;
       img.alt = c.name;
+      if (!isBack && frontScale < 1) {
+        // Réduit autour du centre.
+        img.style.transformOrigin = "center";
+        img.style.transform = `scale(${frontScale})`;
+      }
       cell.appendChild(img);
     }
     grid.appendChild(cell);
@@ -464,6 +474,8 @@ function getConfigFromUI() {
   const alignX = $("#align-x")?.value || "center";
   const alignY = $("#align-y")?.value || "center";
 
+  const frontScalePercent = clampNumber($("#front-scale-percent")?.value, { min: 50, max: 100, fallback: 100 });
+
   // Marges: uniquement pertinentes si l'alignement n'est pas centré.
   const marginXmm = readMarginMm({ inputEl: $("#margin-x"), enabled: alignX !== "center", fallbackMm: 8 });
   const marginYmm = readMarginMm({ inputEl: $("#margin-y"), enabled: alignY !== "center", fallbackMm: 8 });
@@ -486,6 +498,7 @@ function getConfigFromUI() {
     alignY,
     marginXmm,
     marginYmm,
+    frontScalePercent,
     printBacks,
     backMode,
     backOffsetXmm,
@@ -795,6 +808,7 @@ async function main() {
     "#margin-x",
     "#align-y",
     "#margin-y",
+    "#front-scale-percent",
     "#print-backs",
     "#back-mode",
   ];
