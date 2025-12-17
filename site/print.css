@@ -74,6 +74,7 @@
   color: black;
   border: 1px dashed rgba(0, 0, 0, 0.25);
   /* Padding pilotable (marges) : par défaut 8mm, surchargé par JS si besoin. */
+  padding: var(--sheet-pad-y, 8mm) var(--sheet-pad-x, 8mm);
   display: flex;
   flex-direction: column;
 }
@@ -95,6 +96,13 @@
      devient incohérent sur les pages suivantes. */
   flex: 1;
   min-height: 0;
+}
+
+/* Décalage visuel appliqué uniquement au verso; on utilise transform
+   pour ne pas toucher au flux (évite de déplacer les feuilles suivantes). */
+.cards-grid.back-offset {
+  transform: translate(var(--back-dx, 0), var(--back-dy, 0));
+  transform-origin: 0 0;
 }
 
 .card-cell {

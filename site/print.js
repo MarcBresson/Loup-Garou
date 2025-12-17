@@ -318,12 +318,25 @@ function renderSheet(parent, opts) {
   // Réduction du recto: on réduit le contenu (image) dans sa cellule,
   // sans modifier la taille de la cellule (donc sans casser l'alignement recto/verso).
   const frontScale = clampNumber(frontScalePercent, { min: 50, max: 100, fallback: 100 }) / 100;
+  // Réduction via padding (%): plus robuste que transform/absolute en @media print.
+  // Si scale = p, alors padding = (1 - p)/2 sur chaque côté.
+  const frontPadPct = Math.max(0, (1 - frontScale) * 50);
 
   // Offset optionnel (utilisé pour le dos)
-  if (opts?.isBack && (backOffsetXmm || backOffsetYmm)) {
+  // Offset optionnel (utilisé pour le dos)
+  // Important: on utilise `left`/`top` (position: relative) plutôt que
+  // `transform: translate()` car les transforms sont parfois ignorés ou
+  // mal rendus en `@media print` (p.ex. avec certaines imprimantes/headless).
+  // left/top fonctionnent de façon fiable en aperçu et à l'impression.
+  if (opts?.isBack && (Number(backOffsetXmm) || Number(backOffsetYmm))) {
+    // Use CSS variables + transform so the visual offset does not affect
+    // document flow (avoid pushing subsequent sheets down). Transforms
+    // don't change layout size, so they are safe for printing previews.
     const dx = Number(backOffsetXmm) || 0;
     const dy = Number(backOffsetYmm) || 0;
-    grid.style.transform = `translate(${dx}mm, ${dy}mm)`;
+    grid.style.setProperty("--back-dx", `${dx}mm`);
+    grid.style.setProperty("--back-dy", `${dy}mm`);
+    grid.classList.add("back-offset");
   }
 
   // Gestion marges optionnelles : on pilote via variables CSS pour que ça s'applique
@@ -367,15 +380,15 @@ function renderSheet(parent, opts) {
     cell.style.width = `${cardWmm}mm`;
     cell.style.height = `${cardHmm}mm`;
 
+    if (!isBack && frontPadPct > 0) {
+      cell.style.boxSizing = "border-box";
+      cell.style.padding = `${frontPadPct}%`;
+    }
+
     if (c.url) {
       const img = document.createElement("img");
       img.src = c.url;
       img.alt = c.name;
-      if (!isBack && frontScale < 1) {
-        // Réduit autour du centre.
-        img.style.transformOrigin = "center";
-        img.style.transform = `scale(${frontScale})`;
-      }
       cell.appendChild(img);
     }
     grid.appendChild(cell);
@@ -811,6 +824,8 @@ async function main() {
     "#front-scale-percent",
     "#print-backs",
     "#back-mode",
+    "#back-offset-x",
+    "#back-offset-y",
   ];
   for (const sel of rerenderInputs) {
     $(sel).addEventListener("input", () => {

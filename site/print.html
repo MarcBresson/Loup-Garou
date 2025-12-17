@@ -108,15 +108,15 @@
               <label class="field">
                 <span>Traits sur</span>
                 <select id="cut-lines-side" class="select">
-                  <option value="both" selected>Recto + Dos</option>
+                  <option value="both">Recto + Dos</option>
                   <option value="front">Recto uniquement</option>
-                  <option value="back">Dos uniquement</option>
+                  <option value="back" selected>Dos uniquement</option>
                 </select>
               </label>
 
               <label class="field">
                 <span>Largeur trait (mm)</span>
-                <input id="cut-line-mm" type="number" step="0.1" min="0" value="0.2" />
+                <input id="cut-line-mm" type="number" step="0.1" min="0" value="0.1" />
               </label>
             </div>
 
@@ -131,7 +131,7 @@
             <div class="row row-tight" style="margin-bottom: 10px">
               <label class="field">
                 <span>Réduction recto (%)</span>
-                <input id="front-scale-percent" type="number" step="1" min="80" max="100" value="100" />
+                <input id="front-scale-percent" type="number" step="1" min="20" max="100" value="100" />
               </label>
               <div class="hint" style="flex: 1; align-self: flex-end">
                 Réduit uniquement le contenu du recto (la carte reste à la même taille) pour éviter qu’un léger décalage d’imprimante ne coupe les bords.
