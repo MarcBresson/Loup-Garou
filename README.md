@@ -1,15 +1,26 @@
 # Loups-Garous — Rôles du jeu de cartes
 
-Ce dépôt contient des cartes (SVG) pour une variante de **Loups-Garous**.
+Accès au site GitHub Pages: [https://marcbresson.github.io/Loup-Garou/site/](https://marcbresson.github.io/Loup-Garou/site/)
 
-## Échelle de balance
+Ce repo inclus :
+- des cartes de rôles pour le jeu de société **Les Loups-Garous de Thiercelieux** et ses extensions. Elles ont été créees par mes soins en m'inspirant du wiki [loupgarou](https://loupgarou.fandom.com/fr/wiki/Wiki_Loup-Garou). 
+- un site statique pour aider à la composition des parties, à la gestion du jeu, et à l'impression des cartes.
+
+## Site (GitHub Pages)
+
+Ce repo inclut un site statique (en français) :
+
+- **Suggestions de compositions** de 6 à 18 joueurs. N'hésitez pas à proposer les vôtres en créant une issue
+- **Composition personnalisée** (ajout/suppression de rôles, import/export JSON)
+- **Assistant Meneur de Jeu** (consignes tour par tour, adaptées aux rôles présents)
+- **Préparation d'impression** pour choisir les cartes à imprimer, et comment elles le seront. L'assistant d'impression est accessible depuis [ce lien](https://marcbresson.github.io/Loup-Garou/site/print.html)
+
+## Rôles
 
 - La colonne **Balance** mesure l’impact *moyen* du rôle sur la partie.
 - Score **positif** = plutôt **en faveur du village**.
 - Score **négatif** = plutôt **en faveur des loups**.
 - Plus la valeur est grande en absolu, plus le rôle est influent.
-
-## Rôles
 
 | Rôle | Provenance | Camp typique | Description (extrait du SVG) | Balance |
 |---|---|---|---|---:|
@@ -59,18 +70,6 @@ Ce dépôt contient des cartes (SVG) pour une variante de **Loups-Garous**.
 ## Notes
 
 - Les colonnes **Rôle**, **Provenance** et **Description** sont **extraites automatiquement** des SVG via `id=role`, `id=origine`, `id=descText`.
-- Un script ajoute également automatiquement (dans chaque SVG de `roles/`) :
-	- en bas à gauche : le **camp typique** (`id=campTypique`)
-	- en bas à droite : la **balance** (`id=balance`)
-	- source des données : la table ci-dessus
-
-## Site (GitHub Pages)
-
-Ce repo inclut un petit site statique (en français) dans `site/` :
-
-- **Suggestions de compositions** (6 à 18 joueurs)
-- **Composition personnalisée** (ajout/suppression de rôles, import/export JSON)
-- **Assistant Meneur de Jeu** (consignes tour par tour, adaptées aux rôles présents)
 
 ### Test en local
 
@@ -80,4 +79,4 @@ Le site est 100% statique (pas de build). Il faut juste le servir via HTTP (les 
 python3 -m http.server 5173
 ```
 
-Puis ouvre `http://localhost:5173/site/`.
+Puis il faut ouvrir `http://localhost:5173/site/`.
